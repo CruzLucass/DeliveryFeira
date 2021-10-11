@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E8900D05-1173-433F-AB1B-0FC319D9D776}</ProjectGuid>
+    <ProjectGuid>{392B194C-E66B-47F9-832A-F1D3C7FDC8C3}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
@@ -129,7 +129,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\DeliveryFeira\DeliveryFeira.csproj">
-      <Project>{43A805C5-2074-469D-98CF-91F41870F057}</Project>
+      <Project>{B1E4E3E0-177D-430C-A1D7-DFC26D4C3EE5}</Project>
       <Name>DeliveryFeira</Name>
     </ProjectReference>
   </ItemGroup>

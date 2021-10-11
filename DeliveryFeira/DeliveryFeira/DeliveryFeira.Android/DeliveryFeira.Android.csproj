@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8DB56A58-7E82-416F-B245-6B8656372E22}</ProjectGuid>
+    <ProjectGuid>{EF4E4F76-1BCB-43C4-8B5C-57AFA8421DE4}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -88,7 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DeliveryFeira\DeliveryFeira.csproj">
-      <Project>{43A805C5-2074-469D-98CF-91F41870F057}</Project>
+      <Project>{B1E4E3E0-177D-430C-A1D7-DFC26D4C3EE5}</Project>
       <Name>DeliveryFeira</Name>
     </ProjectReference>
   </ItemGroup>
