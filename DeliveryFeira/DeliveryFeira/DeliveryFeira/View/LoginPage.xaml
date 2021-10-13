@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeliveryFeira.View.LoginPage">
+    <StackLayout>
+    <ScrollView>       
+        <StackLayout Orientation="Vertical" >
+            <Frame BackgroundColor="LightBlue" Padding="24" CornerRadius="0">
+                <Label 
+                    Text="Feira Delivery" 
+                    HorizontalTextAlignment="Center" 
+                    TextColor="White" 
+                    FontSize="30"
+                />
+            </Frame>
+            <Label 
+                Text="Faça login" 
+                FontSize="Title" 
+                Padding="30,10,30,10"
+                HorizontalTextAlignment="Center"
+            />
+            <StackLayout Padding="40" Spacing="20" >
+                <Entry 
+                    x:Name="txtLogin" 
+                    Placeholder="Login" 
+                    TextColor="Black"                
+                />
+                <Entry 
+                    x:Name="txtSenha" 
+                    Placeholder="Senha" 
+                    TextColor="Black"
+                    IsPassword="True"
+                />
+                <Label FontSize="20" Padding="30,24,30,15" HorizontalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Esqueci minha senha" FontAttributes="Bold"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button
+                    x:Name="btnLogin"
+                    Text="ENTRAR"
+                    BackgroundColor="LightBlue"
+                    CornerRadius="5"
+                />
+
+                <StackLayout 
+                    Orientation="Horizontal"
+                    HorizontalOptions="FillAndExpand">
+                    <BoxView 
+                        BackgroundColor="#555" 
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" 
+                        HeightRequest="1" 
+                    />
+                    <Label 
+                        Text="CADASTRE-SE" 
+                        TextColor="#555"
+                        HorizontalOptions="Center"  
+                        VerticalOptions="Center" 
+                        FontSize="Medium" 
+                    />
+                    <BoxView 
+                        BackgroundColor="#555" 
+                        HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="Center" 
+                        HeightRequest="1"  
+                    />
+                </StackLayout>
+                    <Button
+                        x:Name="btnSouProdutor"
+                        Text="SOU PRODUTOR"
+                        BackgroundColor="LightBlue"
+                        CornerRadius="5"
+                    />
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeliveryFeira.View.HomePage">
+    <StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <!--  Search bar  -->
+                <StackLayout
+                    Grid.Row="1"
+                    BackgroundColor="LightBlue"
+                    HeightRequest="150"
+                    Orientation="Vertical">
+                    <Label 
+                        Text="Feira Delivery" 
+                        HorizontalTextAlignment="Center" 
+                        TextColor="White" 
+                        FontSize="30"
+                        Padding="0,20,0,20"
+                    />
+                    <Frame
+                        Margin="10,10,10,0"
+                        Padding="0"                       
+                        BackgroundColor="White"
+                        CornerRadius="5"
+                        HorizontalOptions="FillAndExpand">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <SearchBar
+                                BackgroundColor="White"
+                                Placeholder="Procurar..."
+                                SearchCommand="{Binding SearchButtonPressedCommand}"
+                                Text="{Binding SearchBarText}">
+                            </SearchBar>
+                        </Grid>
+                    </Frame>              
+
+                </StackLayout>
+                <StackLayout 
+                    Orientation="Vertical"
+                    Padding="30,0,30,0">
+                    <BoxView 
+                        BackgroundColor="#555" 
+                        HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="Center" 
+                        HeightRequest="1"
+                    />
+                </StackLayout>
+                <StackLayout 
+                    Orientation="Vertical" 
+                    Padding="80,15,80,15"
+                    BackgroundColor="WhiteSmoke">
+                    
+                    <Label 
+                        Text="Toda semana com produtos frescos e orgânicos" 
+                        HorizontalTextAlignment="Center" 
+                        TextColor="Black" 
+                        FontSize="26"
+                    />
+                    <Label 
+                        Text="Faça já seu pedido sem sair de casa!" 
+                        HorizontalTextAlignment="Center" 
+                        TextColor="Black" 
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        Padding="30,10,30,10"
+                    />
+                    <Button
+                        x:Name="btnFazerLogin"
+                        Text="FAÇA LOGIN"
+                        BackgroundColor="LightBlue"
+                        CornerRadius="5"
+                    />
+                </StackLayout>
+                <StackLayout
+                    Orientation="Vertical" 
+                    Padding="30,0,30,0"
+                    BackgroundColor="LightBlue">
+                    <BoxView 
+                        BackgroundColor="#555" 
+                        HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="Center" 
+                        HeightRequest="1"
+                    />
+                    <Label FontSize="20"
+                           HorizontalOptions="StartAndExpand"
+                           Padding="0,0,0,20">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Entrega todas as terças e sábados" FontAttributes="Bold"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
