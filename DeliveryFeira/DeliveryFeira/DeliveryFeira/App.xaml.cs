@@ -2,6 +2,7 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using DeliveryFeira.View;
 
 namespace DeliveryFeira
 {
@@ -11,7 +12,9 @@ namespace DeliveryFeira
         {
             InitializeComponent();
 
-            MainPage = new HomePage();
+            //MainPage = new HomePage();
+            MainPage = new NavigationPage(new MainPage());
+
         }
 
         protected override void OnStart()

@@ -10,14 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace DeliveryFeira.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : ContentPage
+    public partial class VitrinePage : ContentPage
     {
-        public HomePage()
+        public VitrinePage()
         {
             InitializeComponent();
-
-            btnFazerLogin.Clicked += (s, e) => Navigation.PushAsync(new LoginPage());
         }
-
     }
 }
