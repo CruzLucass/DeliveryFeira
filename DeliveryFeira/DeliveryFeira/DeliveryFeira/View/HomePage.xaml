@@ -6,7 +6,7 @@
     <StackLayout>
         <ScrollView>
             <StackLayout>
-                
+
                 <!--  Search bar  -->
                 <StackLayout
                     Grid.Row="1"
@@ -38,7 +38,7 @@
                                 Text="{Binding SearchBarText}">
                             </SearchBar>
                         </Grid>
-                    </Frame>              
+                    </Frame>
 
                 </StackLayout>
                 <StackLayout 
@@ -56,7 +56,7 @@
                     Orientation="Vertical" 
                     Padding="80,15,80,15"
                     BackgroundColor="WhiteSmoke">
-                    
+
                     <Label 
                         Text="Toda semana com produtos frescos e orgânicos" 
                         HorizontalTextAlignment="Center" 
@@ -140,15 +140,15 @@
                                 </Frame>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
-                        
+
                     </CollectionView>
-                    
+
 
                 </StackLayout>
 
-            </StackLayout>              
-                               
-          
+            </StackLayout>
+
+
         </ScrollView>
     </StackLayout>
 </ContentPage>

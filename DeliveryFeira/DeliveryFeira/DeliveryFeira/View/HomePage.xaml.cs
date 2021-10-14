@@ -21,7 +21,6 @@ namespace DeliveryFeira.View
             InitializeComponent();
             
         }
-
-        public void CarouselView
+        
     }
 }
