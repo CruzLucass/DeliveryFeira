@@ -12,9 +12,16 @@ namespace DeliveryFeira.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HomePage : ContentPage
     {
+        List<String> produtos = new List<string>
+        {
+            "Morango", "Maçã", "Alface", "Tomate", "Queijo", "Rúcula", "Cenoura"
+        };
         public HomePage()
         {
             InitializeComponent();
+            
         }
+
+        public void CarouselView
     }
 }
