@@ -2,24 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DeliveryFeira.View.HomePage"
-             Title="Feira Delivery">
+             Title="HOME">
+
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
 
                 <!--  Search bar  -->
-                <StackLayout
-                    Grid.Row="1"
-                    BackgroundColor="LightBlue"
-                    HeightRequest="150"
-                    Orientation="Vertical">
-                    <Label 
-                        Text="Feira Delivery" 
-                        HorizontalTextAlignment="Center" 
-                        TextColor="White" 
-                        FontSize="30"
-                        Padding="0,20,0,20"
-                    />
+                <StackLayout>                    
                     <Frame
                         Margin="10,10,10,0"
                         Padding="0"                       
@@ -90,7 +80,7 @@
                     />
                     <Label FontSize="20"
                            HorizontalOptions="StartAndExpand"
-                           Padding="0,0,0,20">
+                           Padding="0,0,0,10">
                         <Label.FormattedText>
                             <FormattedString>
                                 <FormattedString.Spans>
@@ -99,55 +89,90 @@
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
-
-                    <CollectionView 
-                        x:Name="CarouselView" 
-                        ItemsSource="{Binding Fotos}"
-                        VerticalOptions="CenterAndExpand"
+                    <FlexLayout
                         HorizontalOptions="Center"
-                        Margin="5,0,5,0"
+                        HeightRequest="110"
+                        AlignItems="Center"
+                        AlignContent="Center"
                         >
-                        <CollectionView.ItemsLayout>
-                            <GridItemsLayout Orientation="Vertical" Span="2"/>
-                        </CollectionView.ItemsLayout>
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <Frame
-                                    BorderColor="LightGray"
-                                    CornerRadius="5"
-                                    HasShadow="False"
-                                    >
-                                    <Grid>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="Auto"/>
-                                            <ColumnDefinition Width="100"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto"/>
-                                        </Grid.RowDefinitions>
-                                        <Image Grid.Column="0" 
-                                               Source="roca.png" 
-                                               Aspect="AspectFill"
-                                        />
-                                        <StackLayout Grid.Column="1">
-                                            <Label 
-                                                Text="{Binding}"
-                                                HorizontalOptions="EndAndExpand"
-                                                VerticalOptions="CenterAndExpand"
-                                            />
-                                        </StackLayout>
-                                    </Grid>
-                                </Frame>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-
-                    </CollectionView>
-
-
+                        <Image
+                            Source="roca.png.opdownload"
+                            Margin="5,0,5,5"
+                            />
+                        <Image
+                            Source="roca.png.opdownload"
+                            Margin="5,0,5,5"/>
+                    </FlexLayout>                    
                 </StackLayout>
+                <FlexLayout
+                    AlignItems="Center"
+                    HorizontalOptions="CenterAndExpand"
+                    >
+                    <Ellipse Fill="#d4d4d4"
+                        WidthRequest="80"
+                        HeightRequest="80"
+                        Margin="20,5,5,5"/>
+                    
+                    <Ellipse Fill="#c4c4c4"
+                        WidthRequest="80"
+                        HeightRequest="80"
+                        Margin="20,5,5,5"/>
 
+                    <Ellipse Fill="#b4b4b4"
+                        WidthRequest="80"
+                        HeightRequest="80"
+                        Margin="20,5,5,5"/>
+
+                    <Ellipse Fill="#a4a4a4"
+                        WidthRequest="80"
+                        HeightRequest="80"
+                        Margin="20,5,15,5"/>
+                    
+                </FlexLayout>
+                <FlexLayout AlignItems="Center"
+                    HorizontalOptions="CenterAndExpand">
+                    <Label Text="Hortaliça" Margin="30,0,15,5"/>
+                    <Label Text="Frutas" Margin="40,0,15,5"/>
+                    <Label Text="Verduras" Margin="40,0,15,5"/>
+                    <Label Text="Legumes" Margin="40,0,15,5"/>
+                </FlexLayout>
+
+                <StackLayout
+                    Orientation="Vertical" 
+                    Padding="30,10,30,0"
+                    BackgroundColor="LightBlue">
+                    <BoxView 
+                        BackgroundColor="#555" 
+                        HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="Center" 
+                        HeightRequest="1"
+                    />
+                    <Label FontSize="20"
+                           HorizontalOptions="StartAndExpand"
+                           Padding="0,0,0,10">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Conheça os produtores" FontAttributes="Bold"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <FlexLayout
+                        HorizontalOptions="Center"
+                        HeightRequest="200"
+                        AlignItems="Center"
+                        >
+                        <Image
+                            Source="produtor2.jpg"
+                            Margin="40,-30,20,0"
+                            />
+                        <Image
+                            Source="produtores.jpg"                            
+                            Margin="40,-30,20,0"/>
+                    </FlexLayout>
+                </StackLayout>
             </StackLayout>
-
 
         </ScrollView>
     </ContentPage.Content>
