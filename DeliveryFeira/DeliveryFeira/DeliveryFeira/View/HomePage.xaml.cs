@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,8 +19,9 @@ namespace DeliveryFeira.View
         public HomePage()
         {
             InitializeComponent();
-            
+
+            btnFazerLogin.Clicked += (s, e) => Navigation.PushAsync(new LoginPage());
         }
-        
+
     }
 }
